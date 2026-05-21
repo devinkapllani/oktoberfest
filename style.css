@@ -374,3 +374,17 @@ width:100%;
 }
 
 }
+.lang-btn{
+    padding:10px 22px;
+    border:none;
+    border-radius:30px;
+    background:linear-gradient(45deg,#009dff,#005eff);
+    color:white;
+    font-weight:700;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.lang-btn:hover{
+    transform:scale(1.05);
+}
