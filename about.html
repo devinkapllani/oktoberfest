@@ -28,7 +28,9 @@ ABOUT.HTML
 <a href="rules.html">Regeln</a>
 <a href="facts.html">Fakten</a>
 </nav>
-
+<button class="lang-btn" onclick="toggleLanguage()">
+    🇩🇪 DE
+    </button>
 </header>
 
 <section class="page">
@@ -69,6 +71,104 @@ Diese Kleidung ist ein wichtiger Teil der bayerischen Kultur.
 <footer>
 <p>Devin projekt</p>
 </footer>
+<script>
 
+    let german = false;
+    
+    function toggleLanguage(){
+    
+    german = !german;
+    
+    if(german){
+    
+    document.querySelector(".lang-btn").innerHTML = "🇬🇧 EN";
+    
+    /* NAVIGATION */
+    
+    document.querySelectorAll("nav a")[0].innerHTML = "Startseite";
+    document.querySelectorAll("nav a")[1].innerHTML = "Über";
+    document.querySelectorAll("nav a")[2].innerHTML = "Aktivitäten";
+    document.querySelectorAll("nav a")[3].innerHTML = "Galerie";
+    document.querySelectorAll("nav a")[4].innerHTML = "Regeln";
+    document.querySelectorAll("nav a")[5].innerHTML = "Fakten";
+    
+    /* PAGE TITLE */
+    
+    document.querySelector("h1").innerHTML =
+    "Interessante Fakten Über Das Oktoberfest";
+    
+    /* FACTS */
+    
+    document.querySelectorAll(".fact")[0].innerHTML =
+    "🍺 Das Oktoberfest begann vor mehr als 200 Jahren.";
+    
+    document.querySelectorAll(".fact")[1].innerHTML =
+    "👥 Mehr als 6 Millionen Menschen besuchen das Festival jedes Jahr.";
+    
+    document.querySelectorAll(".fact")[2].innerHTML =
+    "🥨 Tausende riesige Brezeln werden täglich gegessen.";
+    
+    document.querySelectorAll(".fact")[3].innerHTML =
+    "🎵 Traditionelle bayerische Musik wird überall gespielt.";
+    
+    document.querySelectorAll(".fact")[4].innerHTML =
+    "🎡 Es ist auch einer der größten Jahrmärkte Europas.";
+    
+    document.querySelectorAll(".fact")[5].innerHTML =
+    "👘 Traditionelle Kleidung ist ein wichtiger Teil des Festivals.";
+    
+    /* FOOTER */
+    
+    document.querySelector("footer p").innerHTML =
+    "Oktoberfest Schulprojekt";
+    
+    }else{
+    
+    document.querySelector(".lang-btn").innerHTML = "🇩🇪 DE";
+    
+    /* NAVIGATION */
+    
+    document.querySelectorAll("nav a")[0].innerHTML = "Home";
+    document.querySelectorAll("nav a")[1].innerHTML = "About";
+    document.querySelectorAll("nav a")[2].innerHTML = "Activities";
+    document.querySelectorAll("nav a")[3].innerHTML = "Gallery";
+    document.querySelectorAll("nav a")[4].innerHTML = "Rules";
+    document.querySelectorAll("nav a")[5].innerHTML = "Fun Facts";
+    
+    /* PAGE TITLE */
+    
+    document.querySelector("h1").innerHTML =
+    "Fun Facts About Oktoberfest";
+    
+    /* FACTS */
+    
+    document.querySelectorAll(".fact")[0].innerHTML =
+    "🍺 Oktoberfest started more than 200 years ago.";
+    
+    document.querySelectorAll(".fact")[1].innerHTML =
+    "👥 More than 6 million people visit every year.";
+    
+    document.querySelectorAll(".fact")[2].innerHTML =
+    "🥨 Thousands of giant pretzels are eaten daily.";
+    
+    document.querySelectorAll(".fact")[3].innerHTML =
+    "🎵 Traditional Bavarian music is played everywhere.";
+    
+    document.querySelectorAll(".fact")[4].innerHTML =
+    "🎡 It is also one of the biggest funfairs in Europe.";
+    
+    document.querySelectorAll(".fact")[5].innerHTML =
+    "👘 Traditional clothes are an important part of the festival.";
+    
+    /* FOOTER */
+    
+    document.querySelector("footer p").innerHTML =
+    "Oktoberfest School Project";
+    
+    }
+    
+    }
+    
+    </script>
 </body>
 </html>
