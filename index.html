@@ -30,7 +30,9 @@ INDEX.HTML
 <a href="rules.html">Regeln</a>
 <a href="facts.html">Fakten</a>
 </nav>
-
+<button class="lang-btn" onclick="toggleLanguage()">
+    🇩🇪 DE
+    </button>
 </header>
 
 <section class="hero">
@@ -112,6 +114,51 @@ kommen nach München, um dieses unglaubliche Fest zu erleben.
 <footer>
 <p>Devin projekt</p>
 </footer>
+<script>
 
+    let german = false;
+    
+    function toggleLanguage(){
+    
+    german = !german;
+    
+    if(german){
+    
+    document.querySelector(".lang-btn").innerHTML = "🇬🇧 EN";
+    
+    replaceText("Home","Startseite");
+    replaceText("About","Über");
+    replaceText("Activities","Aktivitäten");
+    replaceText("Gallery","Galerie");
+    replaceText("Rules","Regeln");
+    replaceText("Fun Facts","Fakten");
+    
+    replaceText("The World's Biggest Beer Festival","Das größte Bierfestival der Welt");
+    
+    }else{
+    
+    document.querySelector(".lang-btn").innerHTML = "🇩🇪 DE";
+    
+    replaceText("Startseite","Home");
+    replaceText("Über","About");
+    replaceText("Aktivitäten","Activities");
+    replaceText("Galerie","Gallery");
+    replaceText("Regeln","Rules");
+    replaceText("Fakten","Fun Facts");
+    
+    replaceText("Das größte Bierfestival der Welt","The World's Biggest Beer Festival");
+    
+    }
+    
+    }
+    
+    function replaceText(oldText,newText){
+    
+    document.body.innerHTML =
+    document.body.innerHTML.replaceAll(oldText,newText);
+    
+    }
+    
+    </script>
 </body>
 </html>
