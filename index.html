@@ -1,5 +1,3 @@
-<!-- ENGLISH VERSION - INDEX.HTML -->
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -26,10 +24,9 @@
 <a href="rules.html">Rules</a>
 <a href="facts.html">Fun Facts</a>
 </nav>
-
 <button class="lang-btn" onclick="toggleLanguage()">
-🇩🇪 DE
-</button>
+    🇩🇪 DE
+    </button>
 
 </header>
 
@@ -39,18 +36,18 @@
 
 <div class="hero-content">
 
-<h1 id="title">OKTOBERFEST</h1>
+<h1>OKTOBERFEST</h1>
 
-<h2 id="subtitle">The World's Biggest Beer Festival</h2>
+<h2>The World's Biggest Beer Festival</h2>
 
-<p id="hero-text">
+<p>
 Oktoberfest is the most famous festival in Germany.
 It takes place every year in Munich and attracts millions
 of visitors from all over the world.
 </p>
 
 <a href="about.html">
-<button id="explore-btn">Explore Festival</button>
+<button>Explore Festival</button>
 </a>
 
 </div>
@@ -59,9 +56,9 @@ of visitors from all over the world.
 
 <section class="intro">
 
-<h2 id="intro-title">What is Oktoberfest?</h2>
+<h2>What is Oktoberfest?</h2>
 
-<p id="intro-text">
+<p>
 Oktoberfest is a traditional German festival celebrated
 with music, food, dancing, traditional Bavarian clothes,
 fun rides, and famous German beer tents.
@@ -70,18 +67,18 @@ fun rides, and famous German beer tents.
 <div class="cards">
 
 <div class="card">
-<h3 id="location-title">📍 Location</h3>
-<p id="location-text">Munich, Germany</p>
+<h3>📍 Location</h3>
+<p>Munich, Germany</p>
 </div>
 
 <div class="card">
-<h3 id="dates-title">📅 Dates</h3>
-<p id="dates-text">Late September - Early October</p>
+<h3>📅 Dates</h3>
+<p>Late September - Early October</p>
 </div>
 
 <div class="card">
-<h3 id="visitors-title">👥 Visitors</h3>
-<p id="visitors-text">Over 6 Million Every Year</p>
+<h3>👥 Visitors</h3>
+<p>Over 6 Million Every Year</p>
 </div>
 
 </div>
@@ -89,136 +86,54 @@ fun rides, and famous German beer tents.
 </section>
 
 <footer>
-<p id="footer-text">Created for School Project • Oktoberfest Website</p>
+<p>Created for School Project • Oktoberfest Website</p>
 </footer>
-
 <script>
 
-let german = false;
-
-function toggleLanguage(){
-
-german = !german;
-
-if(german){
-
-document.querySelector(".lang-btn").innerHTML = "🇬🇧 EN";
-
-/* NAVIGATION */
-
-document.querySelectorAll("nav a")[0].innerHTML = "Startseite";
-document.querySelectorAll("nav a")[1].innerHTML = "Über";
-document.querySelectorAll("nav a")[2].innerHTML = "Aktivitäten";
-document.querySelectorAll("nav a")[3].innerHTML = "Galerie";
-document.querySelectorAll("nav a")[4].innerHTML = "Regeln";
-document.querySelectorAll("nav a")[5].innerHTML = "Fakten";
-
-/* HERO */
-
-document.getElementById("subtitle").innerHTML =
-"Das größte Bierfestival der Welt";
-
-document.getElementById("hero-text").innerHTML =
-"Das Oktoberfest ist das berühmteste Festival in Deutschland. Es findet jedes Jahr in München statt und zieht Millionen Besucher aus der ganzen Welt an.";
-
-document.getElementById("explore-btn").innerHTML =
-"Festival Entdecken";
-
-/* INTRO */
-
-document.getElementById("intro-title").innerHTML =
-"Was ist das Oktoberfest?";
-
-document.getElementById("intro-text").innerHTML =
-"Das Oktoberfest ist ein traditionelles deutsches Festival mit Musik, Essen, Tanz, traditionellen bayerischen Kleidern, Fahrgeschäften und berühmten Bierzelten.";
-
-/* CARDS */
-
-document.getElementById("location-title").innerHTML =
-"📍 Ort";
-
-document.getElementById("location-text").innerHTML =
-"München, Deutschland";
-
-document.getElementById("dates-title").innerHTML =
-"📅 Daten";
-
-document.getElementById("dates-text").innerHTML =
-"Ende September - Anfang Oktober";
-
-document.getElementById("visitors-title").innerHTML =
-"👥 Besucher";
-
-document.getElementById("visitors-text").innerHTML =
-"Über 6 Millionen jedes Jahr";
-
-/* FOOTER */
-
-document.getElementById("footer-text").innerHTML =
-"Schulprojekt • Oktoberfest Website";
-
-}else{
-
-document.querySelector(".lang-btn").innerHTML = "🇩🇪 DE";
-
-/* NAVIGATION */
-
-document.querySelectorAll("nav a")[0].innerHTML = "Home";
-document.querySelectorAll("nav a")[1].innerHTML = "About";
-document.querySelectorAll("nav a")[2].innerHTML = "Activities";
-document.querySelectorAll("nav a")[3].innerHTML = "Gallery";
-document.querySelectorAll("nav a")[4].innerHTML = "Rules";
-document.querySelectorAll("nav a")[5].innerHTML = "Fun Facts";
-
-/* HERO */
-
-document.getElementById("subtitle").innerHTML =
-"The World's Biggest Beer Festival";
-
-document.getElementById("hero-text").innerHTML =
-"Oktoberfest is the most famous festival in Germany. It takes place every year in Munich and attracts millions of visitors from all over the world.";
-
-document.getElementById("explore-btn").innerHTML =
-"Explore Festival";
-
-/* INTRO */
-
-document.getElementById("intro-title").innerHTML =
-"What is Oktoberfest?";
-
-document.getElementById("intro-text").innerHTML =
-"Oktoberfest is a traditional German festival celebrated with music, food, dancing, traditional Bavarian clothes, fun rides, and famous German beer tents.";
-
-/* CARDS */
-
-document.getElementById("location-title").innerHTML =
-"📍 Location";
-
-document.getElementById("location-text").innerHTML =
-"Munich, Germany";
-
-document.getElementById("dates-title").innerHTML =
-"📅 Dates";
-
-document.getElementById("dates-text").innerHTML =
-"Late September - Early October";
-
-document.getElementById("visitors-title").innerHTML =
-"👥 Visitors";
-
-document.getElementById("visitors-text").innerHTML =
-"Over 6 Million Every Year";
-
-/* FOOTER */
-
-document.getElementById("footer-text").innerHTML =
-"Created for School Project • Oktoberfest Website";
-
-}
-
-}
-
-</script>
+    let german = false;
+    
+    function toggleLanguage(){
+    
+    german = !german;
+    
+    if(german){
+    
+    document.querySelector(".lang-btn").innerHTML = "🇬🇧 EN";
+    
+    replaceText("Home","Startseite");
+    replaceText("About","Über");
+    replaceText("Activities","Aktivitäten");
+    replaceText("Gallery","Galerie");
+    replaceText("Rules","Regeln");
+    replaceText("Fun Facts","Fakten");
+    
+    replaceText("The World's Biggest Beer Festival","Das größte Bierfestival der Welt");
+    
+    }else{
+    
+    document.querySelector(".lang-btn").innerHTML = "🇩🇪 DE";
+    
+    replaceText("Startseite","Home");
+    replaceText("Über","About");
+    replaceText("Aktivitäten","Activities");
+    replaceText("Galerie","Gallery");
+    replaceText("Regeln","Rules");
+    replaceText("Fakten","Fun Facts");
+    
+    replaceText("Das größte Bierfestival der Welt","The World's Biggest Beer Festival");
+    
+    }
+    
+    }
+    
+    function replaceText(oldText,newText){
+    
+    document.body.innerHTML =
+    document.body.innerHTML.replaceAll(oldText,newText);
+    
+    }
+    
+    </script>
 
 </body>
 </html>
