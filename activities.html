@@ -28,6 +28,10 @@ ACTIVITIES.HTML
 <a href="rules.html">Regeln</a>
 <a href="facts.html">Fakten</a>
 </nav>
+<button class="lang-btn" onclick="toggleLanguage()">
+    🇩🇪 DE
+    </button>
+</header>
 
 </header>
 
@@ -74,6 +78,130 @@ ACTIVITIES.HTML
 <footer>
 <p>Devin projekt</p>
 </footer>
+<script>
 
+    let german = false;
+    
+    function toggleLanguage(){
+    
+    german = !german;
+    
+    if(german){
+    
+    document.querySelector(".lang-btn").innerHTML = "🇬🇧 EN";
+    
+    /* NAVIGATION */
+    
+    document.querySelectorAll("nav a")[0].innerHTML = "Startseite";
+    document.querySelectorAll("nav a")[1].innerHTML = "Über";
+    document.querySelectorAll("nav a")[2].innerHTML = "Aktivitäten";
+    document.querySelectorAll("nav a")[3].innerHTML = "Galerie";
+    document.querySelectorAll("nav a")[4].innerHTML = "Regeln";
+    document.querySelectorAll("nav a")[5].innerHTML = "Fakten";
+    
+    /* PAGE TITLE */
+    
+    document.querySelector("h1").innerHTML =
+    "Die Besten Aktivitäten";
+    
+    /* CARDS */
+    
+    document.querySelectorAll(".activity-card h2")[0].innerHTML =
+    "🎡 Fahrgeschäfte";
+    
+    document.querySelectorAll(".activity-card p")[0].innerHTML =
+    "Genießen Sie Achterbahnen, Riesenräder und viele aufregende Fahrten.";
+    
+    document.querySelectorAll(".activity-card h2")[1].innerHTML =
+    "🎵 Musik Hören";
+    
+    document.querySelectorAll(".activity-card p")[1].innerHTML =
+    "Traditionelle deutsche Bands spielen jeden Tag Live-Musik.";
+    
+    document.querySelectorAll(".activity-card h2")[2].innerHTML =
+    "🍺 Bierzelte Besuchen";
+    
+    document.querySelectorAll(".activity-card p")[2].innerHTML =
+    "Große Zelte bieten traditionelles deutsches Essen und Getränke.";
+    
+    document.querySelectorAll(".activity-card h2")[3].innerHTML =
+    "🥨 Traditionelles Essen";
+    
+    document.querySelectorAll(".activity-card p")[3].innerHTML =
+    "Probieren Sie Brezeln, Würstchen, Schnitzel und bayerische Desserts.";
+    
+    document.querySelectorAll(".activity-card h2")[4].innerHTML =
+    "📸 Fotos Machen";
+    
+    document.querySelectorAll(".activity-card p")[4].innerHTML =
+    "Schöne Dekorationen und Lichter machen das Festival perfekt für Fotos.";
+    
+    document.querySelectorAll(".activity-card h2")[5].innerHTML =
+    "👘 Bayerische Kleidung";
+    
+    document.querySelectorAll(".activity-card p")[5].innerHTML =
+    "Viele Besucher tragen traditionelle deutsche Kleidung.";
+    
+    }else{
+    
+    document.querySelector(".lang-btn").innerHTML = "🇩🇪 DE";
+    
+    /* NAVIGATION */
+    
+    document.querySelectorAll("nav a")[0].innerHTML = "Home";
+    document.querySelectorAll("nav a")[1].innerHTML = "About";
+    document.querySelectorAll("nav a")[2].innerHTML = "Activities";
+    document.querySelectorAll("nav a")[3].innerHTML = "Gallery";
+    document.querySelectorAll("nav a")[4].innerHTML = "Rules";
+    document.querySelectorAll("nav a")[5].innerHTML = "Fun Facts";
+    
+    /* PAGE TITLE */
+    
+    document.querySelector("h1").innerHTML =
+    "Best Things To Do";
+    
+    /* CARDS */
+    
+    document.querySelectorAll(".activity-card h2")[0].innerHTML =
+    "🎡 Ride Attractions";
+    
+    document.querySelectorAll(".activity-card p")[0].innerHTML =
+    "Enjoy roller coasters, giant wheels, and many exciting rides.";
+    
+    document.querySelectorAll(".activity-card h2")[1].innerHTML =
+    "🎵 Listen To Music";
+    
+    document.querySelectorAll(".activity-card p")[1].innerHTML =
+    "Traditional German bands perform live music every day.";
+    
+    document.querySelectorAll(".activity-card h2")[2].innerHTML =
+    "🍺 Visit Beer Tents";
+    
+    document.querySelectorAll(".activity-card p")[2].innerHTML =
+    "Large tents offer traditional German food and drinks.";
+    
+    document.querySelectorAll(".activity-card h2")[3].innerHTML =
+    "🥨 Taste Traditional Food";
+    
+    document.querySelectorAll(".activity-card p")[3].innerHTML =
+    "Try pretzels, sausages, schnitzel, and Bavarian desserts.";
+    
+    document.querySelectorAll(".activity-card h2")[4].innerHTML =
+    "📸 Take Photos";
+    
+    document.querySelectorAll(".activity-card p")[4].innerHTML =
+    "Beautiful decorations and lights make the festival perfect for photos.";
+    
+    document.querySelectorAll(".activity-card h2")[5].innerHTML =
+    "👘 Wear Bavarian Clothes";
+    
+    document.querySelectorAll(".activity-card p")[5].innerHTML =
+    "Many visitors wear traditional German outfits.";
+    
+    }
+    
+    }
+    
+    </script>
 </body>
 </html>
