@@ -1,15 +1,9 @@
-<!-- =========================
-ABOUT.HTML
-========================= -->
-
 <!DOCTYPE html>
-<html lang="de">
-
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>Über Oktoberfest</title>
+<title>About Oktoberfest</title>
 
 <link rel="stylesheet" href="style.css">
 </head>
@@ -21,55 +15,56 @@ ABOUT.HTML
 <div class="logo">🍺 Oktoberfest</div>
 
 <nav>
-<a href="index.html">Startseite</a>
-<a href="about.html">Über</a>
-<a href="activities.html">Aktivitäten</a>
-<a href="gallery.html">Galerie</a>
-<a href="rules.html">Regeln</a>
-<a href="facts.html">Fakten</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="activities.html">Activities</a>
+<a href="gallery.html">Gallery</a>
+<a href="rules.html">Rules</a>
+<a href="facts.html">Fun Facts</a>
 </nav>
 <button class="lang-btn" onclick="toggleLanguage()">
     🇩🇪 DE
     </button>
+
 </header>
 
 <section class="page">
 
-<h1>Über das Oktoberfest</h1>
+<h1>About Oktoberfest</h1>
 
 <p>
-Das Oktoberfest begann im Jahr 1810 in München,
-Deutschland. Es wurde ursprünglich organisiert,
-um die Hochzeit von Kronprinz Ludwig und Prinzessin Therese zu feiern.
+Oktoberfest started in 1810 in Munich, Germany.
+The festival was first organized to celebrate the wedding
+of Crown Prince Ludwig and Princess Therese.
 </p>
 
 <p>
-Heute ist das Oktoberfest das größte Volksfest der Welt.
-Menschen genießen traditionelle bayerische Kultur,
-Musik, Tanz und berühmtes deutsches Essen.
+Today, Oktoberfest is the biggest folk festival in the world.
+People enjoy traditional Bavarian culture, music, dancing,
+food, and famous German beer.
 </p>
 
-<h2>Traditionelle Kleidung</h2>
+<h2>Traditional Clothing</h2>
 
 <p>
-Frauen tragen meistens ein Dirndl und Männer Lederhosen.
-Diese Kleidung ist ein wichtiger Teil der bayerischen Kultur.
+Women usually wear a traditional dress called a "Dirndl",
+while men wear "Lederhosen".
 </p>
 
-<h2>Berühmtes Essen</h2>
+<h2>Famous Foods</h2>
 
 <ul>
-<li>Brezeln</li>
-<li>Bratwürste</li>
+<li>Pretzels</li>
+<li>German Sausages</li>
+<li>Roasted Chicken</li>
 <li>Schnitzel</li>
-<li>Hähnchen</li>
-<li>Apfelstrudel</li>
+<li>Apple Strudel</li>
 </ul>
 
 </section>
 
 <footer>
-<p>Devin projekt</p>
+<p>Oktoberfest School Project</p>
 </footer>
 <script>
 
@@ -95,27 +90,43 @@ Diese Kleidung ist ein wichtiger Teil der bayerischen Kultur.
     /* PAGE TITLE */
     
     document.querySelector("h1").innerHTML =
-    "Interessante Fakten Über Das Oktoberfest";
+    "Über das Oktoberfest";
     
-    /* FACTS */
+    /* PARAGRAPHS */
     
-    document.querySelectorAll(".fact")[0].innerHTML =
-    "🍺 Das Oktoberfest begann vor mehr als 200 Jahren.";
+    document.querySelectorAll("p")[0].innerHTML =
+    "Das Oktoberfest begann im Jahr 1810 in München, Deutschland. Das Festival wurde organisiert, um die Hochzeit von Kronprinz Ludwig und Prinzessin Therese zu feiern.";
     
-    document.querySelectorAll(".fact")[1].innerHTML =
-    "👥 Mehr als 6 Millionen Menschen besuchen das Festival jedes Jahr.";
+    document.querySelectorAll("p")[1].innerHTML =
+    "Heute ist das Oktoberfest das größte Volksfest der Welt. Menschen genießen bayerische Kultur, Musik, Tanz, Essen und berühmtes deutsches Bier.";
     
-    document.querySelectorAll(".fact")[2].innerHTML =
-    "🥨 Tausende riesige Brezeln werden täglich gegessen.";
+    /* CLOTHING */
     
-    document.querySelectorAll(".fact")[3].innerHTML =
-    "🎵 Traditionelle bayerische Musik wird überall gespielt.";
+    document.querySelector("h2").innerHTML =
+    "Traditionelle Kleidung";
     
-    document.querySelectorAll(".fact")[4].innerHTML =
-    "🎡 Es ist auch einer der größten Jahrmärkte Europas.";
+    document.querySelectorAll("p")[2].innerHTML =
+    "Frauen tragen normalerweise ein traditionelles Kleid namens Dirndl, während Männer Lederhosen tragen.";
     
-    document.querySelectorAll(".fact")[5].innerHTML =
-    "👘 Traditionelle Kleidung ist ein wichtiger Teil des Festivals.";
+    /* FOOD */
+    
+    document.querySelectorAll("h2")[1].innerHTML =
+    "Berühmte Speisen";
+    
+    document.querySelectorAll("li")[0].innerHTML =
+    "Brezeln";
+    
+    document.querySelectorAll("li")[1].innerHTML =
+    "Deutsche Würstchen";
+    
+    document.querySelectorAll("li")[2].innerHTML =
+    "Brathähnchen";
+    
+    document.querySelectorAll("li")[3].innerHTML =
+    "Schnitzel";
+    
+    document.querySelectorAll("li")[4].innerHTML =
+    "Apfelstrudel";
     
     /* FOOTER */
     
@@ -138,27 +149,43 @@ Diese Kleidung ist ein wichtiger Teil der bayerischen Kultur.
     /* PAGE TITLE */
     
     document.querySelector("h1").innerHTML =
-    "Fun Facts About Oktoberfest";
+    "About Oktoberfest";
     
-    /* FACTS */
+    /* PARAGRAPHS */
     
-    document.querySelectorAll(".fact")[0].innerHTML =
-    "🍺 Oktoberfest started more than 200 years ago.";
+    document.querySelectorAll("p")[0].innerHTML =
+    "Oktoberfest started in 1810 in Munich, Germany. The festival was first organized to celebrate the wedding of Crown Prince Ludwig and Princess Therese.";
     
-    document.querySelectorAll(".fact")[1].innerHTML =
-    "👥 More than 6 million people visit every year.";
+    document.querySelectorAll("p")[1].innerHTML =
+    "Today, Oktoberfest is the biggest folk festival in the world. People enjoy traditional Bavarian culture, music, dancing, food, and famous German beer.";
     
-    document.querySelectorAll(".fact")[2].innerHTML =
-    "🥨 Thousands of giant pretzels are eaten daily.";
+    /* CLOTHING */
     
-    document.querySelectorAll(".fact")[3].innerHTML =
-    "🎵 Traditional Bavarian music is played everywhere.";
+    document.querySelector("h2").innerHTML =
+    "Traditional Clothing";
     
-    document.querySelectorAll(".fact")[4].innerHTML =
-    "🎡 It is also one of the biggest funfairs in Europe.";
+    document.querySelectorAll("p")[2].innerHTML =
+    'Women usually wear a traditional dress called a "Dirndl", while men wear "Lederhosen".';
     
-    document.querySelectorAll(".fact")[5].innerHTML =
-    "👘 Traditional clothes are an important part of the festival.";
+    /* FOOD */
+    
+    document.querySelectorAll("h2")[1].innerHTML =
+    "Famous Foods";
+    
+    document.querySelectorAll("li")[0].innerHTML =
+    "Pretzels";
+    
+    document.querySelectorAll("li")[1].innerHTML =
+    "German Sausages";
+    
+    document.querySelectorAll("li")[2].innerHTML =
+    "Roasted Chicken";
+    
+    document.querySelectorAll("li")[3].innerHTML =
+    "Schnitzel";
+    
+    document.querySelectorAll("li")[4].innerHTML =
+    "Apple Strudel";
     
     /* FOOTER */
     
