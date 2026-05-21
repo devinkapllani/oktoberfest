@@ -28,7 +28,9 @@ RULES.HTML
 <a href="rules.html">Regeln</a>
 <a href="facts.html">Fakten</a>
 </nav>
-
+<button class="lang-btn" onclick="toggleLanguage()">
+    🇩🇪 DE
+    </button>
 </header>
 
 <section class="page">
@@ -69,6 +71,128 @@ RULES.HTML
 <footer>
 <p>Devin projekt</p>
 </footer>
+<script>
 
+    let german = false;
+    
+    function toggleLanguage(){
+    
+    german = !german;
+    
+    if(german){
+    
+    document.querySelector(".lang-btn").innerHTML = "🇬🇧 EN";
+    
+    /* NAVIGATION */
+    
+    document.querySelectorAll("nav a")[0].innerHTML = "Startseite";
+    document.querySelectorAll("nav a")[1].innerHTML = "Über";
+    document.querySelectorAll("nav a")[2].innerHTML = "Aktivitäten";
+    document.querySelectorAll("nav a")[3].innerHTML = "Galerie";
+    document.querySelectorAll("nav a")[4].innerHTML = "Regeln";
+    document.querySelectorAll("nav a")[5].innerHTML = "Fakten";
+    
+    /* PAGE TITLE */
+    
+    document.querySelector("h1").innerHTML =
+    "Festivalregeln";
+    
+    /* RULES */
+    
+    document.querySelectorAll(".rule h2")[0].innerHTML =
+    "✔ Andere Respektieren";
+    
+    document.querySelectorAll(".rule p")[0].innerHTML =
+    "Besucher sollten sich respektvoll und höflich verhalten.";
+    
+    document.querySelectorAll(".rule h2")[1].innerHTML =
+    "✔ Bereich Sauber Halten";
+    
+    document.querySelectorAll(".rule p")[1].innerHTML =
+    "Werfen Sie Müll in die Behälter und helfen Sie, das Festival sauber zu halten.";
+    
+    document.querySelectorAll(".rule h2")[2].innerHTML =
+    "✔ Sicherheitsregeln Befolgen";
+    
+    document.querySelectorAll(".rule p")[2].innerHTML =
+    "Hören Sie auf das Festivalpersonal und die Sicherheitskräfte.";
+    
+    document.querySelectorAll(".rule h2")[3].innerHTML =
+    "✔ Keine Gefährlichen Gegenstände";
+    
+    document.querySelectorAll(".rule p")[3].innerHTML =
+    "Waffen und gefährliche Gegenstände sind nicht erlaubt.";
+    
+    document.querySelectorAll(".rule h2")[4].innerHTML =
+    "✔ Mit Freunden Zusammenbleiben";
+    
+    document.querySelectorAll(".rule p")[4].innerHTML =
+    "Das Festival ist sehr voll, deshalb sollten Sie zusammenbleiben.";
+    
+    /* FOOTER */
+    
+    document.querySelector("footer p").innerHTML =
+    "Oktoberfest Schulprojekt";
+    
+    }else{
+    
+    document.querySelector(".lang-btn").innerHTML = "🇩🇪 DE";
+    
+    /* NAVIGATION */
+    
+    document.querySelectorAll("nav a")[0].innerHTML = "Home";
+    document.querySelectorAll("nav a")[1].innerHTML = "About";
+    document.querySelectorAll("nav a")[2].innerHTML = "Activities";
+    document.querySelectorAll("nav a")[3].innerHTML = "Gallery";
+    document.querySelectorAll("nav a")[4].innerHTML = "Rules";
+    document.querySelectorAll("nav a")[5].innerHTML = "Fun Facts";
+    
+    /* PAGE TITLE */
+    
+    document.querySelector("h1").innerHTML =
+    "Festival Rules";
+    
+    /* RULES */
+    
+    document.querySelectorAll(".rule h2")[0].innerHTML =
+    "✔ Respect Others";
+    
+    document.querySelectorAll(".rule p")[0].innerHTML =
+    "Visitors should behave respectfully and politely.";
+    
+    document.querySelectorAll(".rule h2")[1].innerHTML =
+    "✔ Keep The Area Clean";
+    
+    document.querySelectorAll(".rule p")[1].innerHTML =
+    "Throw trash in bins and help keep the festival clean.";
+    
+    document.querySelectorAll(".rule h2")[2].innerHTML =
+    "✔ Follow Safety Instructions";
+    
+    document.querySelectorAll(".rule p")[2].innerHTML =
+    "Listen to festival staff and security workers.";
+    
+    document.querySelectorAll(".rule h2")[3].innerHTML =
+    "✔ No Dangerous Objects";
+    
+    document.querySelectorAll(".rule p")[3].innerHTML =
+    "Weapons and dangerous items are not allowed.";
+    
+    document.querySelectorAll(".rule h2")[4].innerHTML =
+    "✔ Stay With Friends";
+    
+    document.querySelectorAll(".rule p")[4].innerHTML =
+    "The festival is very crowded so stay together.";
+    
+    /* FOOTER */
+    
+    document.querySelector("footer p").innerHTML =
+    "Oktoberfest School Project";
+    
+    }
+    
+    }
+    
+    </script>
 </body>
 </html>
